@@ -18,6 +18,16 @@ struct CategoryHome: View {
   var featured: [Landmark] {
     landmarkData.filter { $0.isFeatured }
   }
+  @State var showingProfile = false
+  
+  var profileButton: some View {
+    Button(action: { self.showingProfile.toggle() }) {
+      Image(systemName: "Person.crop.circle")
+        .imageScale(.large)
+        .accessibility(label: Text("User Profile"))
+        .padding()
+    }
+  }
   
   var body: some View {
     NavigationView {
@@ -30,9 +40,16 @@ struct CategoryHome: View {
         ForEach(categories.keys.sorted(), id: \.self) { key in
           CategoryRow(categoryName: key, items: self.categories[key]!)
         }
-      .listRowInsets(EdgeInsets())
+        .listRowInsets(EdgeInsets())
+        NavigationLink(destination: LandmarkList()) {
+          Text("See All")
+        }
       }
       .navigationBarTitle(Text("Featured"))
+      .navigationBarItems(trailing: profileButton)
+      .sheet(isPresented: $showingProfile) {
+        Text("User Profile")
+      }
     }
   }
 }
