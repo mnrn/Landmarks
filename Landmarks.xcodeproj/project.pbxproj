@@ -46,6 +46,7 @@
 		0DB9183824ADB9A0000A7C8D /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB9183724ADB9A0000A7C8D /* HikeGraph.swift */; };
 		0DB9183A24ADB9C8000A7C8D /* GraphCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB9183924ADB9C8000A7C8D /* GraphCapsule.swift */; };
 		0DB9183D24ADBC46000A7C8D /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DB9183C24ADBC46000A7C8D /* hikeData.json */; };
+		0DB9183F24B2C564000A7C8D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB9183E24B2C564000A7C8D /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		0DB9183724ADB9A0000A7C8D /* HikeGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
 		0DB9183924ADB9C8000A7C8D /* GraphCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCapsule.swift; sourceTree = "<group>"; };
 		0DB9183C24ADBC46000A7C8D /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
+		0DB9183E24B2C564000A7C8D /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				0DB9183124ADB87D000A7C8D /* HikeView.swift */,
 				0DB9183524ADB961000A7C8D /* HikeDetail.swift */,
 				0DB9182924AD8521000A7C8D /* HexagonParameters.swift */,
+				0DB9183E24B2C564000A7C8D /* Home.swift */,
 				0D85F0F724AAFDFF0085765E /* Supporting Views */,
 				0D85F10424AB00510085765E /* Resources */,
 				0D85F0C024A5EF100085765E /* Assets.xcassets */,
@@ -411,6 +414,7 @@
 				0D85F0FF24AAFFBA0085765E /* LandmarkDetail.swift in Sources */,
 				0DB9182E24AD92F1000A7C8D /* BadgeSymbol.swift in Sources */,
 				0DB9183024AD9BA0000A7C8D /* RotatedBadgeSymbol.swift in Sources */,
+				0DB9183F24B2C564000A7C8D /* Home.swift in Sources */,
 				0DB9183624ADB961000A7C8D /* HikeDetail.swift in Sources */,
 				0D85F0F624A993330085765E /* MapView.swift in Sources */,
 				0D85F0BD24A5EF0F0085765E /* SceneDelegate.swift in Sources */,
