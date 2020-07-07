@@ -19,6 +19,7 @@ struct CategoryHome: View {
     landmarkData.filter { $0.isFeatured }
   }
   @State var showingProfile = false
+  @EnvironmentObject var userData: UserData
   
   var profileButton: some View {
     Button(action: { self.showingProfile.toggle() }) {
@@ -37,10 +38,12 @@ struct CategoryHome: View {
           .frame(height: 200)
           .clipped()
           .listRowInsets(EdgeInsets())
+        
         ForEach(categories.keys.sorted(), id: \.self) { key in
           CategoryRow(categoryName: key, items: self.categories[key]!)
         }
         .listRowInsets(EdgeInsets())
+        
         NavigationLink(destination: LandmarkList()) {
           Text("See All")
         }
@@ -48,7 +51,8 @@ struct CategoryHome: View {
       .navigationBarTitle(Text("Featured"))
       .navigationBarItems(trailing: profileButton)
       .sheet(isPresented: $showingProfile) {
-        Text("User Profile")
+        ProfileHost()
+          .environmentObject(self.userData)
       }
     }
   }
