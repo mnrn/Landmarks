@@ -10,6 +10,7 @@ import SwiftUI
 
 struct PageView<Page: View>: View {
   var viewControllers: [UIHostingController<Page>]
+  @State var currentPage = 0
   
   init(_ views: [Page]) {
     self.viewControllers = views.map {
@@ -18,7 +19,10 @@ struct PageView<Page: View>: View {
   }
   
   var body: some View {
-    PageViewController(controllers: viewControllers)
+    VStack {
+    PageViewController(controllers: viewControllers, currentPage: $currentPage)
+      Text("Current Page: \(currentPage)")
+    }
   }
 }
 
