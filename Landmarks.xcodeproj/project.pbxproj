@@ -98,6 +98,7 @@
 		0DB918A624B841F1000A7C8D /* charleyrivers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D85F12724AB03990085765E /* charleyrivers.jpg */; };
 		0DB918A824B84450000A7C8D /* WatchLandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB918A724B84450000A7C8D /* WatchLandmarkDetail.swift */; };
 		0DB918AA24B84C59000A7C8D /* WatchMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB918A924B84C59000A7C8D /* WatchMapView.swift */; };
+		0DB918AB24B87074000A7C8D /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D85F13B24AB18610085765E /* LandmarkList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -753,6 +754,7 @@
 				0DB918AA24B84C59000A7C8D /* WatchMapView.swift in Sources */,
 				0DB9188F24B84172000A7C8D /* Data.swift in Sources */,
 				0DB9187524B6B8D2000A7C8D /* HostingController.swift in Sources */,
+				0DB918AB24B87074000A7C8D /* LandmarkList.swift in Sources */,
 				0DB9187324B6B8D2000A7C8D /* ContentView.swift in Sources */,
 				0DB9189124B84172000A7C8D /* UserData.swift in Sources */,
 				0DB9189424B84172000A7C8D /* CircleImage.swift in Sources */,

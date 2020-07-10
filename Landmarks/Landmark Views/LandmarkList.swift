@@ -23,7 +23,7 @@ struct LandmarkList<DetailView: View>: View {
         if !self.userData.showFavoriteOnly || landmark.isFavorite {
           NavigationLink(
           destination: self.detailViewProducer(landmark).environmentObject(self.userData)) {
-              LandmarkRow(landmark: landmark)
+            LandmarkRow(landmark: landmark)
           }
         }
       }
@@ -40,9 +40,8 @@ typealias PreviewDetailView = LandmarkDetail
 #endif
 
 struct LandmarkList_Previews: PreviewProvider {
-    static var previews: some View {
-        LandmarkList { PreviewDetailView(landmark: $0) }
-            .environmentObject(UserData())
-    }
+  static var previews: some View {
+    LandmarkList { PreviewDetailView(landmark: $0) }
+      .environmentObject(UserData())
+  }
 }
-
