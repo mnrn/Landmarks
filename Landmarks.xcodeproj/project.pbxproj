@@ -97,6 +97,7 @@
 		0DB918A524B841F1000A7C8D /* umbagog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D85F12424AB03990085765E /* umbagog.jpg */; };
 		0DB918A624B841F1000A7C8D /* charleyrivers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D85F12724AB03990085765E /* charleyrivers.jpg */; };
 		0DB918A824B84450000A7C8D /* WatchLandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB918A724B84450000A7C8D /* WatchLandmarkDetail.swift */; };
+		0DB918AA24B84C59000A7C8D /* WatchMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB918A924B84C59000A7C8D /* WatchMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -230,6 +231,7 @@
 		0DB9188124B6B8D3000A7C8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DB9188224B6B8D3000A7C8D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		0DB918A724B84450000A7C8D /* WatchLandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchLandmarkDetail.swift; sourceTree = "<group>"; };
+		0DB918A924B84C59000A7C8D /* WatchMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -443,6 +445,7 @@
 			isa = PBXGroup;
 			children = (
 				0DB918A724B84450000A7C8D /* WatchLandmarkDetail.swift */,
+				0DB918A924B84C59000A7C8D /* WatchMapView.swift */,
 				0DB9187224B6B8D2000A7C8D /* ContentView.swift */,
 				0DB9187424B6B8D2000A7C8D /* HostingController.swift */,
 				0DB9187624B6B8D2000A7C8D /* ExtensionDelegate.swift */,
@@ -747,6 +750,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DB9189224B84172000A7C8D /* Hike.swift in Sources */,
+				0DB918AA24B84C59000A7C8D /* WatchMapView.swift in Sources */,
 				0DB9188F24B84172000A7C8D /* Data.swift in Sources */,
 				0DB9187524B6B8D2000A7C8D /* HostingController.swift in Sources */,
 				0DB9187324B6B8D2000A7C8D /* ContentView.swift in Sources */,
