@@ -21,22 +21,22 @@ extension AnyTransition {
 struct HikeView: View {
   var hike: Hike
   @State private var showDetail = true
-  
+
   var body: some View {
     VStack {
       HStack {
         HikeGraph(hike: hike, path: \.elevation)
           .frame(width: 50, height: 30)
           .animation(nil)
-        
+
         VStack(alignment: .leading) {
           Text(hike.name)
             .font(.headline)
           Text(hike.distanceText)
         }
-        
+
         Spacer()
-        
+
         Button(action: {
           withAnimation {
             self.showDetail.toggle()
@@ -49,7 +49,7 @@ struct HikeView: View {
             .padding()
         }
       }
-      
+
       if showDetail {
         HikeDetail(hike: hike)
           .transition(.moveAndFade)

@@ -23,7 +23,7 @@ struct BadgeBackground: View {
             y: height * (0.20 + HexagonParameters.adjustment)
           )
         )
-        
+
         HexagonParameters.points.forEach {
           path.addLine(
             to: .init(
@@ -43,11 +43,13 @@ struct BadgeBackground: View {
           )
         }
       }
-      .fill(LinearGradient(
-        gradient: .init(colors: [Self.gradientStart, Self.gradientEnd]),
-        startPoint: .init(x:  0.5, y: 0),
-        endPoint: .init(x: 0.5, y: 0.6)
-      ))
+      .fill(
+        LinearGradient(
+          gradient: .init(colors: [Self.gradientStart, Self.gradientEnd]),
+          startPoint: .init(x: 0.5, y: 0),
+          endPoint: .init(x: 0.5, y: 0.6)
+        )
+      )
       .aspectRatio(1, contentMode: .fit)
     }
   }
