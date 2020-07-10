@@ -20,7 +20,7 @@ struct CategoryHome: View {
   }
   @State var showingProfile = false
   @EnvironmentObject var userData: UserData
-  
+
   var profileButton: some View {
     Button(action: { self.showingProfile.toggle() }) {
       Image(systemName: "person.crop.circle")
@@ -29,7 +29,7 @@ struct CategoryHome: View {
         .padding()
     }
   }
-  
+
   var body: some View {
     NavigationView {
       List {
@@ -38,12 +38,12 @@ struct CategoryHome: View {
           .frame(height: 200)
           .clipped()
           .listRowInsets(EdgeInsets())
-        
+
         ForEach(categories.keys.sorted(), id: \.self) { key in
           CategoryRow(categoryName: key, items: self.categories[key]!)
         }
         .listRowInsets(EdgeInsets())
-        
+
         NavigationLink(destination: LandmarkList { LandmarkDetail(landmark: $0) }) {
           Text("See All")
         }
