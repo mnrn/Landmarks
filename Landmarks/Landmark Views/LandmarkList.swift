@@ -8,8 +8,10 @@
 
 import SwiftUI
 
-struct LandmarkList: View {
-  @EnvironmentObject var userData: UserData
+struct LandmarkList<DetailView: View>: View {
+  @EnvironmentObject private var userData: UserData
+  
+  let detailViewProducer: (Landmark) -> DetailView
   
   var body: some View {
     List {
@@ -19,8 +21,9 @@ struct LandmarkList: View {
       
       ForEach(userData.landmarks) { landmark in
         if !self.userData.showFavoriteOnly || landmark.isFavorite {
-          NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-            LandmarkRow(landmark: landmark)
+          NavigationLink(
+          destination: self.detailViewProducer(landmark).environmentObject(self.userData)) {
+              LandmarkRow(landmark: landmark)
           }
         }
       }
@@ -29,11 +32,17 @@ struct LandmarkList: View {
   }
 }
 
+
+#if os(watchOS)
+typealias PreviewDetailView = WatchLandmarkDetail
+#else
+typealias PreviewDetailView = LandmarkDetail
+#endif
+
 struct LandmarkList_Previews: PreviewProvider {
-  static var previews: some View {
-    NavigationView {
-      LandmarkList()
-        .environmentObject(UserData())
+    static var previews: some View {
+        LandmarkList { PreviewDetailView(landmark: $0) }
+            .environmentObject(UserData())
     }
-  }
 }
+
