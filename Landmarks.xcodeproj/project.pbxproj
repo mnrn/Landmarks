@@ -36,6 +36,7 @@
 		0D38071424B961F900E8EF15 /* twinlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D85F12024AB03990085765E /* twinlake.jpg */; };
 		0D38071524B961F900E8EF15 /* umbagog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D85F12424AB03990085765E /* umbagog.jpg */; };
 		0D38071624B961F900E8EF15 /* charleyrivers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D85F12724AB03990085765E /* charleyrivers.jpg */; };
+		0D38071824B962F300E8EF15 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38071724B962F300E8EF15 /* LandmarkRow.swift */; };
 		0D85F0BB24A5EF0F0085765E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D85F0BA24A5EF0F0085765E /* AppDelegate.swift */; };
 		0D85F0BD24A5EF0F0085765E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D85F0BC24A5EF0F0085765E /* SceneDelegate.swift */; };
 		0D85F0C124A5EF100085765E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D85F0C024A5EF100085765E /* Assets.xcassets */; };
@@ -215,6 +216,7 @@
 		0D3806F124B9605F00E8EF15 /* MacLandmarksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacLandmarksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D3806F524B9605F00E8EF15 /* MacLandmarksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacLandmarksUITests.swift; sourceTree = "<group>"; };
 		0D3806F724B9605F00E8EF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D38071724B962F300E8EF15 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		0D85F0B724A5EF0F0085765E /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D85F0BA24A5EF0F0085765E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D85F0BC24A5EF0F0085765E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 			children = (
 				0D3806D424B9605E00E8EF15 /* AppDelegate.swift */,
 				0D3806D624B9605E00E8EF15 /* ContentView.swift */,
+				0D38071724B962F300E8EF15 /* LandmarkRow.swift */,
 				0D3806D824B9605F00E8EF15 /* Assets.xcassets */,
 				0D3806DD24B9605F00E8EF15 /* Main.storyboard */,
 				0D3806E024B9605F00E8EF15 /* Info.plist */,
@@ -934,6 +937,7 @@
 				0D38070524B961F100E8EF15 /* Profile.swift in Sources */,
 				0D3806D524B9605E00E8EF15 /* AppDelegate.swift in Sources */,
 				0D38070324B961F100E8EF15 /* UserData.swift in Sources */,
+				0D38071824B962F300E8EF15 /* LandmarkRow.swift in Sources */,
 				0D38070224B961F100E8EF15 /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
