@@ -15,12 +15,12 @@ struct LandmarkList<DetailView: View>: View {
 
   var body: some View {
     List {
-      Toggle(isOn: $userData.showFavoriteOnly) {
+      Toggle(isOn: $userData.showFavoritesOnly) {
         Text("Favorite only")
       }
 
       ForEach(userData.landmarks) { landmark in
-        if !self.userData.showFavoriteOnly || landmark.isFavorite {
+        if !self.userData.showFavoritesOnly || landmark.isFavorite {
           NavigationLink(
             destination: self.detailViewProducer(landmark).environmentObject(self.userData)
           ) {

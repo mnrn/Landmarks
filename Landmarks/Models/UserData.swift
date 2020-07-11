@@ -10,7 +10,7 @@ import Combine
 import SwiftUI
 
 final class UserData: ObservableObject {
-  @Published var showFavoriteOnly = false
+  @Published var showFavoritesOnly = false
   @Published var landmarks = landmarkData
   @Published var profile = Profile.default
 }
